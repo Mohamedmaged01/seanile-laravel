@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --color-primary: #0077B6;
+    --color-secondary: #00B4D8;
+    --color-accent: #FF7B00;
+}
+
+/* Arabic font */
+[lang="ar"] {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
