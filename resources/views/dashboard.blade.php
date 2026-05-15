@@ -76,7 +76,7 @@
                         <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
                             <div class="h-36 relative">
                                 @if($booking->trip?->image)
-                                    <img src="{{ asset('storage/' . $booking->trip->image) }}"
+                                    <img src="{{ asset($booking->trip->image) }}"
                                          alt="{{ $booking->trip?->title }}"
                                          class="w-full h-full object-cover">
                                 @else

@@ -157,7 +157,7 @@
                     <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
                         <div class="relative h-48 overflow-hidden">
                             @if($trip->image)
-                                <img src="{{ asset('storage/' . $trip->image) }}"
+                                <img src="{{ asset($trip->image) }}"
                                      alt="{{ $trip->title }}"
                                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             @else

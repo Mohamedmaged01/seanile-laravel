@@ -24,7 +24,7 @@
             <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 mb-8 flex flex-col sm:flex-row gap-5 items-start">
                 <div class="w-full sm:w-32 h-24 rounded-xl overflow-hidden flex-shrink-0">
                     @if($trip->image)
-                        <img src="{{ asset('storage/' . $trip->image) }}"
+                        <img src="{{ asset($trip->image) }}"
                              alt="{{ $trip->title }}"
                              class="w-full h-full object-cover">
                     @else
